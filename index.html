@@ -17,6 +17,35 @@
         <link rel="shortcut icon" type="image/x-icon" href="./assets/images/8d5a78d4d9e7744fab206cdac3dd7ba9 (1).jpg" />
       </head>
     <style>
+      #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#footer{
+  background-color: #212121;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  line-height: 50px;
+  color: #aaa;
+  text-align: center;
+  width: 100%;
+}
+#myBtn:hover {
+  background-color: #555;
+}
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -37,6 +66,8 @@
   </head>
   <body>
     
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container d-flex justify-content-between">
@@ -55,7 +86,7 @@
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="font-weight-light"> Portfolio</h1>
-        <p>Something short and leading about the collection below its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <h2>This is my Portfolio my projects Html,css and Javascript you can view my projects if you want THANK YOU :)</p>
         
       </div>
     </div>
@@ -181,7 +212,7 @@
              
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                    <a href="https://hungry-brown-84fdae.netlify.app/" target="_blank"  class="btn btn-sm btn-outline-secondary">View</a>
+                    <a href="https://trusting-easley-39846d.netlify.app/" target="_blank"  class="btn btn-sm btn-outline-secondary">View</a>
                     
                 </div>
               </div>
@@ -258,16 +289,49 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="" alt="">
+            <img src="./assets/Lorem Ipsum.png" alt="">
             <div class="card-body">
               <h5><p class="card-text"> <span>
-                Color Flipper <br> <hr>
-              </span> This is a wider card with supporting text below as a natural lead-in
-                 to additional content. This content is a little bit longer.</p></h5>
+                Word Generator <br> <hr>
+              </span> Word Generator is a random word you can copy like lorem ipsum</p></h5>
              
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="https://inspiring-euler-ce1c50.netlify.app/   " target="_blank"  class="btn btn-sm btn-outline-secondary">View</a>
+                  <a href="https://zen-leavitt-fdd643.netlify.app/" target="_blank"  class="btn btn-sm btn-outline-secondary">View</a>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./assets/images/Grocery Bud.png" alt="">
+            <div class="card-body">
+              <h5><p class="card-text"> <span>
+              Grocery<br> <hr>
+              </span> Grocery here you can add what you want to buy in grocerys and remove </p></h5>
+             
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://keen-goodall-131a70.netlify.app/" target="_blank"  class="btn btn-sm btn-outline-secondary">View</a>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./assets/Slider.png" alt="">
+            <div class="card-body">
+              <h5><p class="card-text"> <span>
+               Slider<br> <hr>
+              </span> Slider here you can see example of sliding image</p></h5>
+             
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://hardcore-bell-70b68a.netlify.app/" target="_blank"  class="btn btn-sm btn-outline-secondary">View</a>
                     
                 </div>
               </div>
@@ -280,14 +344,36 @@
 
 </main>
 
-<footer class="text-muted py-5">
-  <div class="container">
-    <p class="float-right mb-1">
-      <a href="#">Back to top</a>
-    </p>
- </div>
-</footer>
 
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
-  </body>
+  </script>
+  </body>  <!-- Copyrights -->
+  <footer>
+    <div class="bg-dark py-4">
+      <div class="container text-center">
+        <p class="text-muted mb-0 py-2">Jhasper ©Copyright &NonBreakingSpace; 2021</p>
+      </div>
+    </div>
+  </footer>
+  <!-- End -->
 </html>
